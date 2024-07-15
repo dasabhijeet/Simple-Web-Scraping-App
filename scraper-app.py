@@ -2,7 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 import re
 import json
-from media_scraper import *
+from src.media_scraper.image_scraper import * #/ directory traversal
 
 # initialize
 # page_text = ''
