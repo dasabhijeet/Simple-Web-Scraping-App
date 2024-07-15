@@ -2,6 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 import re
 import json
+from media_scraper import *
 
 # initialize
 # page_text = ''
@@ -70,7 +71,12 @@ for item in range(20, 30, 1):
 
     with open(filename, 'r+') as f:
         json.dump(new_dictionary, f)
-      
+
+
+# media scraper call
+def media_takeout(link):
+    return image_scraper(link)
+    
 
 
 '''
@@ -93,3 +99,4 @@ for item in range(20, 30, 1):
 
 # Written by: https://github.com/dasabhijeet
 # Date: 30 September 2023
+# Last updated: 15 July 2024
