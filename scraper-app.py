@@ -75,7 +75,7 @@ for item in range(20, 30, 1):
 
 # media scraper call
 def media_takeout(link):
-    return image_scraper(link)
+    return image_scraper_func(link)
     
 
 
